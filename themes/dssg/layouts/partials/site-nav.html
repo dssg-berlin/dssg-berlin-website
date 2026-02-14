@@ -16,19 +16,6 @@
         <li><a href="http://blog.dssg-berlin.org" target="_new">Blog</a></li>
       </ul>
       
-      <ul id="site-nav-language-picker">
-      {{ if .Site.IsMultiLingual }}
-        {{ range .Site.Languages }}
-        {{ if eq . $.Site.Language }}
-          <li><a href="#" class="active language">{{ .LanguageName }}</a></li>
-        {{ else }}
-          {{ range $.Translations }}
-          <li><a href="{{ .Permalink }}" class="">{{ .Language.LanguageName }}</a></li>
-          {{ end }}
-        {{ end }}
-        {{ end }}
-      {{ end }}
-      </ul>
     </nav>
     
   </div>

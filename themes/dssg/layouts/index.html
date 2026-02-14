@@ -1,42 +1,42 @@
 {{ define "main" }}
 
-    {{ .Content }}
+{{ .Content }}
 
-    <div class="w-100 pa4 center bg-dark-gray bt b--black-30  ">
-        
-        <h2 class="white">{{ i18n "homepage_staying_updated" }}</h2>
-        
-        <div class="flex-ns">
+<div class="w-100 pa4 center bg-dark-gray bt b--black-30  ">
+    
+    <h2 class="white">{{ i18n "homepage_staying_updated" }}</h2>
+    
+    <div class="flex-ns">
 
-            <div class="updates w-100 w-50-ns fl">
-                {{ partial "newsletter.html" . }}
-            </div>
-            <div class="white w-100 w-30-ns b--white-30">
-                
-                <h3 class="f4 pv0 mv0 normal">{{ i18n "homepage_dssg_elsewhere" }}</h3>
+        <div class="updates w-100 w-50-ns fl">
+            {{ partial "newsletter.html" . }}
+        </div>
+        <div class="white w-100 w-30-ns b--white-30">
+            
+            <h3 class="f4 pv0 mv0 normal">{{ i18n "homepage_dssg_elsewhere" }}</h3>
 
-                <ul class="list pa0">
-                    <li class="mv2">
-                        <h3 class="normal dtc ">
-                            <img class="v-mid" src="/images/logos/eventbrite_e_orange.png" style="height:1.5em;" alt="">
-                            <a href="https://www.eventbrite.de/o/data-science-for-social-good-berlin-12923757440" class="white">
-                                <span class="v-mid">{{ i18n "homepage_our_events" }}</span>
-                            </a>
-                        </h3>
-                    </li>
-                    <li class="mv2">
-                        <h3 class="normal dtc">
-                            <img class="v-mid" src="/images/logos/medium-monogram.svg" style="height:1.5em;" alt="">
-                            <a href="http://blog.dssg-berlin.org" target="_new" class="white">
-                                <span class="v-mid">{{ i18n "homepage_our_content" }}</span>
-                            </a>
-                        </h3>
-                    </li>
-                </ul>
-            </div>
+            <ul class="list pa0">
+                <li class="mv2">
+                    <h3 class="normal dtc ">
+                        <img class="v-mid" src="/images/logos/eventbrite_e_orange.png" style="height:1.5em;" alt="">
+                        <a href="https://www.eventbrite.de/o/data-science-for-social-good-berlin-12923757440" class="white">
+                            <span class="v-mid">{{ i18n "homepage_our_events" }}</span>
+                        </a>
+                    </h3>
+                </li>
+                <li class="mv2">
+                    <h3 class="normal dtc">
+                        <img class="v-mid" src="/images/logos/medium-monogram.svg" style="height:1.5em;" alt="">
+                        <a href="http://blog.dssg-berlin.org" target="_new" class="white">
+                            <span class="v-mid">{{ i18n "homepage_our_content" }}</span>
+                        </a>
+                    </h3>
+                </li>
+            </ul>
         </div>
     </div>
+</div>
 
-    {{ partial "team.html" . }}
+{{ partial "team.html" . }}
 
 {{ end }}

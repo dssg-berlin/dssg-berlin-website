@@ -2,7 +2,6 @@
 menu:
     main:
         name: Home
-        weight: 1
 ---
 <div class="what-we-do w-100 bg-light-gray pa3">
     <h2 class="lh-title f-subheadline white pa1 pl2 pr2 bg-dssg-blue">
